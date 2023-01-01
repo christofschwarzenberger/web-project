@@ -17,6 +17,7 @@ a{
 
 body{
     scroll-snap-type: y mandatory;
+    background-color: #1e1e1e;
 }
 
 .container{
@@ -48,9 +49,18 @@ h2{
     font-weight: 700;
 }
 
+h5{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+    text-align: left;
+}
+
 p{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     text-align: left;
 }
@@ -561,6 +571,141 @@ img.card{
 
 
 /* End WS2223 Section */
+
+/* Project Page Section */
+
+#lala{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lala .container{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#lala .row{
+    display: flex;
+    flex-direction: row;
+}
+
+#carousel-container{
+    margin-top: 8vh;
+}
+
+#details .p{
+    text-align: justify;
+}
+
+#details .c1{
+    flex: 8;
+}
+
+#details .c2{
+    flex: 1;
+}
+
+#details .c3{
+    flex: 6;
+}
+
+#details .c4{
+    flex: 1;
+}
+
+#details .c3{
+    flex: 4;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: 45vh;
+  width: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* End Project Page Section */
 
 /* Service Section */
 #services{
