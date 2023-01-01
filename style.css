@@ -62,7 +62,7 @@ p{
     color: white;
     font-size: 1.6rem;
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
 }
 
 .section-title{
@@ -1088,6 +1088,25 @@ img.card{
     text-align: center;
 }
 /*End Footer Section */
+
+/* Media Query For Phone */
+
+@media (max-width: 768px) {
+    p{
+        font-size: 1.2rem;
+    }
+
+    h5{
+        font-size: 1.4rem;
+    }
+
+    #lala .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* End Media Query For Phone*/
 
 /* Media Query For Tablet */
 
