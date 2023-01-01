@@ -43,18 +43,31 @@ img{
     object-fit: cover;
 }
 
+h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 h2{
     color: white;
     font-size: 2.7rem;
     font-weight: 700;
 }
 
+h3{
+    color:#00bfa6;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-top: 1vh;
+}
+
 h5{
     color: white;
     font-size: 1.8em;
     font-weight: 500;
-    margin-bottom: 1vh;
-    margin-top: 3vh;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
     text-align: left;
 }
 
@@ -576,7 +589,6 @@ img.card{
 
 #lala{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -584,9 +596,13 @@ img.card{
     max-width: 1140px;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+}
+
+
+#lala .r1{
+    width: 100%;
+    margin-top: 10vh;
 }
 
 #lala .row{
@@ -1092,17 +1108,39 @@ img.card{
 /* Media Query For Phone */
 
 @media (max-width: 768px) {
+    
+    .container{
+        width: 90%;
+    }
+
     p{
         font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
     }
 
     h5{
         font-size: 1.4rem;
     }
 
+    #lala .container{
+        width: 90%;
+    }
+
     #lala .row{
         display: flex;
         flex-direction: column;
+    }
+
+    .mySlides {
+        height: 25vh;
+        width: auto;
     }
 }
 
