@@ -9,6 +9,7 @@ html{
     font-size: 10px;
     font-family: 'Roboto';
     scroll-behavior: smooth;
+    background-color: #1e1e1e;
 }
 
 a{
@@ -242,7 +243,7 @@ p{
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .3;
+    opacity: 0.3;
     z-index: -1;
 }
 
@@ -270,7 +271,7 @@ p{
     bottom: 0;
 }
 
-#hero h1{
+h0{
     display: block;
     width: fit-content;
     font-size: 4em;
@@ -293,20 +294,20 @@ p{
     animation-delay: 3.5s;
 }
 
-#hero h1:nth-child(1){
+h0:nth-child(1){
     animation-delay: 1s;
 }
 
-#hero h1:nth-child(2){
+h0:nth-child(2){
     animation-delay: 2s;
 }
 
-#hero h1:nth-child(3){
+h0:nth-child(3){
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
 }
 
-#hero h1 span{
+h0 span{
     position: absolute;
     top: 0;
     left: 0;
@@ -317,15 +318,15 @@ p{
     animation-delay: .5s;
 }
 
-#hero h1:nth-child(1) span{
+h0:nth-child(1) span{
     animation-delay: .5s;
 }
 
-#hero h1:nth-child(2) span{
+h0:nth-child(2) span{
     animation-delay: 1.5s;
 }
 
-#hero h1:nth-child(3) span{
+h0:nth-child(3) span{
     animation-delay: 2.5s;
 }
 
@@ -374,7 +375,7 @@ p{
 }
 
 #time-beam .r1{
-    min-height: 20vh;
+    min-height: 15vh;
 }
 
 #time-beam .r2{
@@ -433,7 +434,7 @@ p{
     
 }
 
-#time-beam h1{
+h1{
     display: block;
     width: fit-content;
     font-size: 2.7em;
@@ -655,6 +656,196 @@ img.card{
 
 /* End Footer Section */
 
+/* About Me Section */
+
+#aboutme{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutme .aboutme{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 8vh;
+}
+
+#aboutme h0:nth-child(2){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 2s;
+}
+
+.aboutheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.aboutme-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme-content p{
+    width: 50%;
+    font-size: 2.2em;
+    text-align: center;
+    line-height: 200%;
+    margin-bottom: 7vh;
+}
+
+.circled-minime{
+    width: 250px;
+    height: 250px;
+    background-image: url("./img/minime.jpeg");
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 7vh;
+}
+
+/* End About Me Section */
+
+/* Statistics Section */
+
+#statistics{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#statistics .statistics{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 12vh;
+}
+
+.stats-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#statistics .column{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#statistics .stat-circle{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.stat-number{
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.stat-label{
+    font-size: 2em;
+    margin-top: 3vh;
+}
+
+/* End Statistics Section */
+
+/* Expertise Section */
+
+#expertise{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#expertise .expertise{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 12vh;
+}
+
+.mindmap-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mindmap-container img{
+    width: 80%;
+    margin-top: 5vh;
+}
+
+/* End Expertise Section */
+
+/* Info Section */
+
+#info{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info .info{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 12vh;
+}
+
+#info .row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#info .column{
+    margin-top: 3vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info .headline-container{
+    width: 70%;
+}
+
+#info p{
+    width: 70%;
+    text-align: left;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+#info span{
+    font-weight: 700;
+}
+
+/* End Info Section */
 
 /* Media Query For Tablet */
 
