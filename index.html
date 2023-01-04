@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">  
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,100' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/51ff8636fd.js" crossorigin="anonymous"></script>
     
     <title>Christof Schwarzenberger</title>
 </head>
@@ -28,9 +30,9 @@
                         </div>
                     </div>
                     <ul>
-                        <li><a href="#hero" data-after="Home">Home</a></li>
-                        <li><a href="#projects" data-after="Projects">Projects</a></li>
-                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="index.html#hero" data-after="Home">Home</a></li>
+                        <li><a href="index.html#time-beam" data-after="Time-Beam">Timeline</a></li>
+                        <li><a href="about.html" data-after="About">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,9 +48,9 @@
             </div>
             <div class="row">
                 <div class="chrisbrand">
-                    <h1>Hello,<span></span></h1>
-                    <h1>My Name is<span></span></h1>
-                    <h1>Christof<span></span></h1>
+                    <h0>Hello,<span></span></h0>
+                    <h0>My Name is<span></span></h0>
+                    <h0>Christof<span></span></h0>
                 </div>
                 <div class="traveltext">
                     <h2>...fasten your seatbelt and travel back in time with me.</h2>
@@ -56,7 +58,7 @@
             </div>
             <div class="row">
                 <div>
-                    <a href="#projects" type="button" class="cta">Start Time Machine</a>
+                    <a href="#time-beam" type="button" class="cta">Start Time Machine</a>
                 </div>
                 
             </div>
@@ -64,262 +66,304 @@
     </section>
     <!-- End Hero Section -->
 
-    <!-- WS22/23 Section -->
+    <!-- Time-Beam Section -->
 
-    <section id= "ws2223">
-        <div class="ws2223 container">
-            <div class="row r1">
-                <div class="column c1">
-                    <div class="semester">
-                        <h1>winter season<span></span></h1>
-                        <h1>22/23<span></span></h1>
+    <section id="time-beam">
+        <div class="time-beam container">
+            <div id="space">
+                
+            </div>
+            <div class="season ws2223">
+                <div class="row r1">
+                    <div class="column c1">
+                        <div class="semester">
+                            <h1>winter season <span>22/23</span></h1>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <p id="end-date">28.03.2023</p>
                     </div>
                 </div>
-                <div class="column c2">
-
-                </div>
-                <div class="column c3">
-
-                </div>
-            </div>
-            <div class="row r2">
-                <div class="column c1">
-
-                </div>
-                <div class="column c2">
-                    <div class="circle">
-                    </div>
-                </div>
-                <div class="column c3">
-                    <p id="end-date">28.03.2023</p>
-                </div>
-            </div>
-            <div class="row r3">
-                <div class="column c1">
-                    <div class="card">
-                        <a class="card-content" href="project.html" target="_self" rel="noopener">
-                            <div class="card-header">
-                                <p class="project-type">Master Thesis</p>
-                                <p class="card-title">A powerful User Experience for intangible products</p>
+                <div class="row r2">
+                    <div class="column c1">
+                        <div class="card thesis">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <p class="project-type">Master Thesis</p>
+                                    <p class="card-title">A powerful User Experience for intangible products</p>
+                                </div>
+                                <div class="card-image-container">
+                                    <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                </div>
                             </div>
-                            <div class="card-image-container">
-                                <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="progress-bar-empty">
+                            <div id="progress-bar">
+    
                             </div>
-                            <div class="card-footer">
-                                
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <p id="current-date"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="season ss22">
+                <div class="row r1">
+                    <div class="column c1">
+                        <div class="semester">
+                            <h1>summer season <span>22</span></h1>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <p id="end-date">September 2022</p>
+                    </div>
+                </div>
+                <div class="row r2">
+                    <div class="column c1">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">VR and UX Research</p>
+                                        <p class="card-title">Escapers Part 2</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
                             </div>
-                        </a>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">Human Robot Interaction</p>
+                                        <p class="card-title">Pi-Top Face Recognition</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="progress-bar-empty">
+                            <div id="progress-bar">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">UI Design</p>
+                                        <p class="card-title">Google Material Design 3 meets Figma</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">AI and UX Research</p>
+                                        <p class="card-title">Explainable AI</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="column c2">
-                    <div class="progress-bar-empty">
-                        <div id="progress-bar">
-
+            </div>
+            <div class="season ws2122">
+                <div class="row r1">
+                    <div class="column c1">
+                        <div class="semester">
+                            <h1>winter season <span>21/22</span></h1>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <p id="end-date">March 2022</p>
+                    </div>
+                </div>
+                <div class="row r2">
+                    <div class="column c1">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">UX Design and Research</p>
+                                        <p class="card-title">Augmented Fusion</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">UI Design and VR Development</p>
+                                        <p class="card-title">Escapers Part 1</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="progress-bar-empty">
+                            <div id="progress-bar">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">UX Design and VR Development</p>
+                                        <p class="card-title">Transitioning - In Car VR</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">UX Design</p>
+                                        <p class="card-title">Virtual 3D Collaborations</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column c3">
-                    <p id="current-date"></p>
-                </div>
-
             </div>
-            <div class="row r4">
-                <div class="column c1">
-
-                </div>
-                <div class="column c2">
-                    <div class="circle">
+            <div class="season ss21">
+                <div class="row r1">
+                    <div class="column c1">
+                        <div class="semester">
+                            <h1>summer season <span>21</span></h1>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <p id="end-date">September 2021</p>
                     </div>
                 </div>
-                <div class="column c3">
-                    <p id="start-date">29.09.2022</p>
+                <div class="row r2">
+                    <div class="column c1">
+                        <div class="card thesis">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <p class="project-type">Bachelor Thesis</p>
+                                    <p class="card-title">Transitioning - From Reality to Virtuality and Back Again</p>
+                                </div>
+                                <div class="card-image-container">
+                                    <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="progress-bar-empty">
+                            <div id="progress-bar">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <p class="project-type">UI Design and VR Development</p>
+                                        <p class="card-title">Escapers Part 1</p>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row r5">
-                <div class="column c1">
-
-                </div>
-                <div class="column c2">
-                    <div class="past-progress"></div>
-                </div>
-                <div class="column c3">
-
+            <div class="season">
+                <div class="row r1">
+                    <div class="column c1">
+                    </div>
+                    <div class="column c2">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="column c3">
+                        <p id="end-date">March 2021</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- End WS22/23 Section -->
-
-    <!-- Service Section -->
-    <section id="services">
-        <div class="services container content-container">
-            <div class="service-top">
-                <h1 class="section-title">Competences</h1>
-                <p>I successfully finished my bachelor's degree in Mobile Media (Bachelor of Science) this year. During my studies I learned different skills in <span class="bold">computer science</span> and was able to realize them in many projects. In addition to software development, <span class="bold">user-centered design</span> was considered in the develoment process of projects. With the involvement of the users, <span class="bold">usable products</span> are created that work well technically and that people like to use. In teams, I often work as an interface that can <span class="bold">take taks from multiple areas</span> and link them for the context of the project.</p>
-            </div>
-            <div class="service-bottom">
-                <div class="service-item">
-                    <div class="icon">
-                        <i class="material-icons">psychology</i>
-                    </div>
-                    <h2>User Experience</h2>
-                    <p>UX is how a person feels when interacting with a system. It tries to fulfill the user needs in order to evoke positive emotions such as joy of use so that a positive experience is created. A meaningful UX ensures that your customers stay loyal to your products than looking to your competition.</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon">
-                        <i class="material-icons">engineering</i>
-                    </div>
-                    <h2>Usability Engineering</h2>
-                    <p>Usability is how easy, effective and efficient a person can accomplish a given task with your product. Usability is the part of the UX that focuses on the interactions with a system. Optimizing the user interface and eliminating usage problems are the main goals of usability to keep improving products. </p>
-                </div>
-                <div class="service-item">
-                    <div class="icon">
-                        <i class="material-icons">developer_mode</i>
-                    </div>
-                    <h2>App Development</h2>
-                    <p>More and more people are using their smartphones to acess various mobile services for social communication, education or shopping anywhere and at any time. Therefore, there is a need for native apps on Android and iOS, but also for hybrid apps that run on several platforms.</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon">
-                        <i class="material-icons">view_in_ar</i>
-                    </div>
-                    <h2>Virtual Reality</h2>
-                    <p>VR adds the third dimension to traditional digital experiences. VR glasses immerse the user in a new experience that completely surrounds them. It is desirable if the user feels present in the virtual world. Besides the gaming industry, VR is used in education, entertainment and industry 4.0.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Service Section -->
-
-    <!-- Projects Section-->
-    <section id="projects">
-        <div class="projects container content-container">
-            <div class="projects-header">
-                <h1 class="section-title">Latest Projects</h1>
-            </div>
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Virtual Reality in Cars</h1>
-                        <h2>Thesis, Augmented Virtuality, User Experience</h2>
-                        <p>More and more car manufacturers are introducing new entertainment features that transform the vehicle into an experience space. Different approaches integrating Virtual Reality inside the car. In order to ensure a positive user experience the technologies must be adapted for this purpose and passenger needs must be taken into account. While isolation is essential for Virtual Reality to create a sense of presence, passengers have the need to be aware of their surroundings while driving.</p>
-                    </div>
-                    <div class="project-image">
-                        <img src="./img/vr-incar.png" alt="vr-in-cars">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Bucket Map</h1>
-                        <h2>App Development, Flutter</h2>
-                        <p>The Bucket Map App, developed with the cross-platform Flutter, serves as a digital travel companion that can be used to mark countries on a world map that the user has visited and would like to visit in the future. In addition, various places such as hotels, beaches, clubs or restaurants can be saved as pins. The pins are used to find places again that you have saved in Bucket Map.</p>
-                    </div>
-                    <div class="project-image">
-                        <img src="./img/bucket-map.png" alt="bucket-map">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>VR Space Invaders 3D</h1>
-                        <h2>Virtual Reality</h2>
-                        <p>VR Space Invaders is a new interpretation of the shoot-'em-up game Space Invaders that was developed by Tomoshiro Nishikado in 1978. The player controls two cannons and a shield to fend off enemies from a virtual cockpit.</p>
-                    </div>
-                    <div class="project-image">
-                        <img src="./img/space-invaders.png" alt="space-invaders">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Hidden Cultures</h1>
-                        <h2>User Experience, Augmented Reality</h2>
-                        <p>Hidden Cultures is an augmented reality concept in which the user can discover and navigate to hidden places with the help of an app. The concept was developed potential users and implemented as a high fidelity prototype.</p>
-                    </div>
-                    <div class="project-image">
-                        <img src="./img/hidden-cultures.png" alt="hidden-cultures">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Projects Section-->
-
-    <!-- About Section-->
-    <section id="about">
-        <div class="about container content-container">
-            <div class="col-left">
-                <div class="about-img">
-                    <img src="./img/7241.jpg" alt="application-photo">
-                </div>
-            </div>
-            <div class="col-right">
-                <h1 class="section-title">About Me</h1>
-                <h2>Developer, Usability Expert and UX Designer</h2>
-                <p>Hello World! I am studying for a master's degree in Computer Science and Media (M. Sc.) at the Media University of Applied Sciences in Stuttgart. The study program focuses on different areas of computer sciene, such as software development, user experience, maschine learning and it-management. In projects I work with the approach of the user-centered design in order to involve the user during the development process already. The goal is to create usable products that people like to use.</p>
-                <br>
-                <p>Besides my studies I work as a working student in the Future Technologies department at Mercedes-Benz. There, I am involved in the development of new digital visions for the vehicle of the future.</p>
-                <a href="#" class="cta">Download Resume</a>
-            </div>
-        </div>
-    </section>
-    <!-- End About Section-->
-
-    <!-- Contact Section-->
-
-    <section id="contact">
-        <div class="contact container content-container">
-            <div>
-                <h1 class="section-title">Contact Info</h1>
-            </div>
-            <div class="contact-items">
-                <div class="item">
-                    <div class="contact-item">
-                        <div class="icon">
-                            <i class="material-icons">mail_outline</i>
-                        </div>
-                        <div class="contact-info">
-                            <h1>Mail</h1>
-                        </div>
-                    </div>
-                    <p class="contact-item-label">cs325@hdm-stuttgart.de</p>
-                </div>
-                <div class="item">
-                    <div class="contact-item">
-                        <div class="icon">
-                            <i class="material-icons">link</i>
-                        </div>
-                        <div class="contact-info">
-                            <h1>LinkedIn</h1>
-                        </div>
-                    </div>
-                    <p class="contact-item-label">Christof Schwarzenberger</p>
-                </div>
-                <div class="item">
-                    <div class="contact-item">
-                        <div class="icon">
-                            <i class="material-icons">photo_camera</i>
-                        </div>
-                        <div class="contact-info">
-                            <h1>Instagram</h1>
-                        </div>
-                    </div>
-                    <p class="contact-item-label">chris_schwarzen</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section-->
+    <!-- End Time-Beam Section -->
 
     <!-- Footer Section -->
     <section id="footer">
         <div class="footer container">
-            <div class="footer">
-                <div class="impressum">
-                    <a href="#">Impressum</a>
-                    <a href="#">Datenschutz</a>
+            <div class="footer-space">
+                <hr id="footer-line"></hr>
+            </div>
+            <div class="footer-icons">
+                <div id="icon-box">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/christof-schwarzenberger-82b09821b" data-after="Home">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto:christof.schwarzenberger@gmx.de" data-after="Projects">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-                <p>Made with ♥ by Christof Schwarzenberger © 2021. All rights reserved.</p>
+                <div class="footer-text">
+                    <div>
+                        <p class="footer-note">Made with <span style="color: red;">♥</span> by Christof Schwarzenberger © 2023</p>
+                    </div>
+                </div>    
             </div>
         </div>
     </section>
@@ -329,3 +373,4 @@
     <script src="./countdown.js"></script>
 </body>
 </html>
+

@@ -24,7 +24,7 @@ function getPercentage(starttime, endtime) {
 
     today = dd + '.' + mm + '.' + yyyy;
 
-    document.getElementById('current-date').textContent = today + ' The day you discovered me.';
+    document.getElementById('current-date').textContent = today + ' Today';
 
     //get percentage
     startDate = Date.parse(starttime);
