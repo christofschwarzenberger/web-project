@@ -19,8 +19,8 @@
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <a href="#hero">
-                        <h1>Christof Schwarzenberger</h1>
+                    <a href="index.html#hero">
+                        <h6>Christof Schwarzenberger</h6>
                     </a>
                 </div>
                 <div class="nav-list">
@@ -30,9 +30,10 @@
                         </div>
                     </div>
                     <ul>
-                        <li><a href="index.html#hero" data-after="Home">Home</a></li>
-                        <li><a href="index.html#time-beam" data-after="Time-Beam">Timeline</a></li>
-                        <li><a href="about.html" data-after="About">About</a></li>
+                        <li class="nav-1"><a href="index.html#hero" data-after="Home"><h6>Home</h6></a></li>
+                        <li class="nav-2-d"><a href="index.html#time-beam" data-after="Timeline"><h6>Timeline</h6></a></li>
+                        <li class="nav-2-m"><a href="index.html#mobile-time-beam" data-after="Timeline"><h6>Timeline</h6></a></li>
+                        <li class="nav-3"><a href="about.html" data-after="About"><h6>About</h6></a></li>
                     </ul>
                 </div>
             </div>
@@ -52,15 +53,17 @@
                     <h0>My Name is<span></span></h0>
                     <h0>Christof<span></span></h0>
                 </div>
-                <div class="traveltext">
-                    <h2>...fasten your seatbelt and travel back in time with me.</h2>
-                </div>
             </div>
             <div class="row">
-                <div>
-                    <a href="#time-beam" type="button" class="cta">Start Time Machine</a>
+                <div class="traveltext">
+                    <h3>...fasten your seatbelt and travel back in time with me.</h3>
                 </div>
-                
+                <div>
+                    <ul>
+                        <li id="timeline-link-desktop"><a class="cta" href="#time-beam" type="button"><h3>Explore Timeline</h3></a></li>
+                        <li id="timeline-link-mobile"><a class="cta" href="#mobile-time-beam" type="button"><h3>Explore Timeline</h3></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -70,8 +73,7 @@
 
     <section id="time-beam">
         <div class="time-beam container">
-            <div id="space">
-                
+            <div id="space"> 
             </div>
             <div class="season ws2223">
                 <div class="row r1">
@@ -91,20 +93,20 @@
                 <div class="row r2">
                     <div class="column c1">
                         <div class="card thesis">
-                            <div class="card-content">
+                            <a class="card-content" href="project.html" target="_self" rel="noopener">
                                 <div class="card-header">
-                                    <p class="project-type">Master Thesis</p>
-                                    <p class="card-title">A powerful User Experience for intangible products</p>
+                                    <h6 class="project-type">Master Thesis</h6>
+                                    <h2 class="card-title">A powerful User Experience for intangible products</h2>
                                 </div>
                                 <div class="card-image-container">
                                     <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="column c2">
                         <div class="progress-bar-empty">
-                            <div id="progress-bar">
+                            <div class="progress-bar" id="pbd">
     
                             </div>
                         </div>
@@ -135,8 +137,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">VR and UX Research</p>
-                                        <p class="card-title">Escapers Part 2</p>
+                                        <h6 class="project-type">VR and UX Research</h6>
+                                        <h2 class="card-title">Escapers Part 2</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -146,8 +148,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">Human Robot Interaction</p>
-                                        <p class="card-title">Pi-Top Face Recognition</p>
+                                        <h6 class="project-type">Human Robot Interaction</h6>
+                                        <h2 class="card-title">Pi-Top Face Recognition</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -158,7 +160,7 @@
                     </div>
                     <div class="column c2">
                         <div class="progress-bar-empty">
-                            <div id="progress-bar">
+                            <div class="progress-bar">
     
                             </div>
                         </div>
@@ -168,8 +170,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">UI Design</p>
-                                        <p class="card-title">Google Material Design 3 meets Figma</p>
+                                        <h6 class="project-type">UI Design</h6>
+                                        <h2 class="card-title">Google Material Design 3 meets Figma</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -179,8 +181,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">AI and UX Research</p>
-                                        <p class="card-title">Explainable AI</p>
+                                        <h6 class="project-type">AI and UX Research</h6>
+                                        <h2 class="card-title">Explainable AI</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -213,8 +215,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">UX Design and Research</p>
-                                        <p class="card-title">Augmented Fusion</p>
+                                        <h6 class="project-type">UX Design and Research</h6>
+                                        <h2 class="card-title">Augmented Fusion</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -224,8 +226,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">UI Design and VR Development</p>
-                                        <p class="card-title">Escapers Part 1</p>
+                                        <h6 class="project-type">UI Design and VR Development</h6>
+                                        <h2 class="card-title">Escapers Part 1</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -236,7 +238,7 @@
                     </div>
                     <div class="column c2">
                         <div class="progress-bar-empty">
-                            <div id="progress-bar">
+                            <div class="progress-bar">
     
                             </div>
                         </div>
@@ -246,8 +248,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">UX Design and VR Development</p>
-                                        <p class="card-title">Transitioning - In Car VR</p>
+                                        <h6 class="project-type">UX Design and VR Development</h6>
+                                        <h2 class="card-title">Transitioning - In Car VR</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -257,8 +259,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">UX Design</p>
-                                        <p class="card-title">Virtual 3D Collaborations</p>
+                                        <h6 class="project-type">UX Design</h6>
+                                        <h2 class="card-title">Virtual 3D Collaborations</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -289,8 +291,8 @@
                         <div class="card thesis">
                             <div class="card-content">
                                 <div class="card-header">
-                                    <p class="project-type">Bachelor Thesis</p>
-                                    <p class="card-title">Transitioning - From Reality to Virtuality and Back Again</p>
+                                    <h6 class="project-type">Bachelor Thesis</h6>
+                                    <h2 class="card-title">Transitioning - From Reality to Virtuality and Back Again</h2>
                                 </div>
                                 <div class="card-image-container">
                                     <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -300,7 +302,7 @@
                     </div>
                     <div class="column c2">
                         <div class="progress-bar-empty">
-                            <div id="progress-bar">
+                            <div class="progress-bar">
     
                             </div>
                         </div>
@@ -310,8 +312,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <div class="card-header">
-                                        <p class="project-type">UI Design and VR Development</p>
-                                        <p class="card-title">Escapers Part 1</p>
+                                        <h6 class="project-type">App Development</h6>
+                                        <h2 class="card-title">Bucket Map</h2>
                                     </div>
                                     <div class="card-image-container">
                                         <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
@@ -340,6 +342,268 @@
 
     <!-- End Time-Beam Section -->
 
+    <!-- Mobile Time-Beam Section -->
+
+    <section id="mobile-time-beam">
+        <div class="mobile-time-beam container">
+            <div id="space"> 
+            </div>
+            <div class="season ws2223">
+                <div class="row r1">
+                    <div class="column c1">
+                        <div class="semester">
+                            <h1>winter season <span>22/23</span></h1>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="circle-container">
+                            <div class="circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r2">
+                    <div class="column c1">
+                        <div class="card thesis">
+                            <a class="card-content" href="project.html" target="_self" rel="noopener">
+                                <div class="card-header">
+                                    <h6 class="project-type">Master Thesis</h6>
+                                    <h2 class="card-title">A powerful User Experience for intangible products</h2>
+                                </div>
+                                <div class="card-image-container">
+                                    <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-empty">
+                                <div class="progress-bar" id="pbm">
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="season ss22">
+                <div class="row r1">
+                    <div class="column c1">
+                        <div class="semester">
+                            <h1>summer season <span>22</span></h1>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="circle-container">
+                            <div class="circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r2">
+                    <div class="column c1">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">VR and UX Research</h6>
+                                        <h2 class="card-title">Escapers Part 2</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">Human Robot Interaction</h6>
+                                        <h2 class="card-title">Pi-Top Face Recognition</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">UI Design</h6>
+                                        <h2 class="card-title">Google Material Design 3 meets Figma</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">AI and UX Research</h6>
+                                        <h2 class="card-title">Explainable AI</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-empty">
+                                <div class="progress-bar">
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="season ws2122">
+                <div class="row r1">
+                    <div class="column c1">
+                        <div class="semester">
+                            <h1>winter season <span>21/22</span></h1>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="circle-container">
+                            <div class="circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r2">
+                    <div class="column c1">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">UX Design and Research</h6>
+                                        <h2 class="card-title">Augmented Fusion</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">UI Design and VR Development</h6>
+                                        <h2 class="card-title">Escapers Part 1</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">UX Design and VR Development</h6>
+                                        <h2 class="card-title">Transitioning - In Car VR</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">UX Design</h6>
+                                        <h2 class="card-title">Virtual 3D Collaborations</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-empty">
+                                <div class="progress-bar">
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="season ss21">
+                <div class="row r1">
+                    <div class="column c1">
+                        <div class="semester">
+                            <h1>summer season <span>21</span></h1>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="circle-container">
+                            <div class="circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r2">
+                    <div class="column c1">
+                        <div class="card-container">
+                            <div class="card thesis">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">Bachelor Thesis</h6>
+                                        <h2 class="card-title">Transitioning - From Reality to Virtuality and Back Again</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <h6 class="project-type">App Development</h6>
+                                        <h2 class="card-title">Bucket Map</h2>
+                                    </div>
+                                    <div class="card-image-container">
+                                        <img class="card-image" src="./img/powerfulUX.png" alt="powerful-user-experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column c2">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-empty">
+                                <div class="progress-bar">
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="season">
+                <div class="row r1">
+                    <div class="column c1">
+                    </div>
+                    <div class="column c2">
+                        <div class="circle-container">
+                            <div class="circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Mobile Time-Beam Section -->
+
     <!-- Footer Section -->
     <section id="footer">
         <div class="footer container">
@@ -361,7 +625,7 @@
                 </div>
                 <div class="footer-text">
                     <div>
-                        <p class="footer-note">Made with <span style="color: red;">♥</span> by Christof Schwarzenberger © 2023</p>
+                        <h6 class="footer-note">Made with <span style="color: red;">♥</span> by Christof Schwarzenberger © 2023</h6>
                     </div>
                 </div>    
             </div>

@@ -49,7 +49,8 @@ var timeGone = getTimeSince(startDate);
 var daysLeft = getDaysRemaining(endDate);
 var percentComplete = getPercentage(startDate, endDate);
 
-document.getElementById('progress-bar').style.height = percentComplete.toString() + '%';
+document.getElementById('pbd').style.height = percentComplete.toString() + '%';
+document.getElementById('pbm').style.height = percentComplete.toString() + '%';
 document.getElementById('current-date').style.bottom = percentComplete.toString() - 2 + '%';
 
 
