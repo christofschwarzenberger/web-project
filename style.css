@@ -48,8 +48,9 @@ h3{
 
 p{
     color: white;
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 400;
+    text-align: left;
 }
 
 h6{
@@ -79,13 +80,6 @@ body{
 span{
     font-weight: 800;
     color: #00bfa6;
-}
-
-p{
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: left;
 }
 
 .cta{
@@ -306,11 +300,11 @@ h0:nth-child(3) span{
 }
 
 #time-beam .ss22 .r2{
-    min-height: 90vh;
+    min-height: 95vh;
 }
 
 #time-beam .ws2122 .r2{
-    min-height: 90vh;
+    min-height: 95vh;
 }
 
 #time-beam .r3{
@@ -389,70 +383,65 @@ h0:nth-child(3) span{
 }
 
 
-.card{
-    width: 100%;
-    height: 45%;
-    background-color: #303030;
-    border-radius: 20px;
-    display: flex;
-    transition: transform .2s;
-}
+
 
 .card:hover{
     transform: scale(1.05);
 }
 
-#time-beam .ss21 .c3 .card{
-    height: 65%;
-}
 
-.thesis{
-    height: 70%;
-}
-
-img.card{
-    width: 100%;
-}
-
-.card-container{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 #time-beam .ss21 .c3 .card-container{
     justify-content: flex-end;
 }
 
-.card-content{
-    margin: 25px;
-    display: flex;
+.card-container{
     width: 100%;
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 7vh;
+}
+
+.card{
+    width: 100%;
+    height: 40vh;
+
+    background-color: #303030;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s;
+    background-size: cover;
+    background-position: 50% 60%;
 }
 
 .card-header{
-    flex: 1;
-    min-height: 0;
-    position: relative;
-    z-index: 1;
+    margin: 25px 25px 0px 25px;
+}
+
+.card-content{
+    margin: 25px;
+    display: flex;
+    height: 40vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.card-image-container{
+    flex: 1.5;
 }
 
 .card-title{
     margin-top: 10px;
 }
 
-.card-image-container{
-    flex: 1.5;
-}
-
 .card-image{
     max-width: 100%;
-    height: auto;
+    min-height: auto;
 }
 
 .material-icons.md-30{
@@ -613,7 +602,7 @@ img.card{
     flex-direction: column;
     width: 100%;
     max-width: 800px;
-    height: 60vh;
+    height: 40vh;
     position: relative;
     margin: auto;
     margin-top: 5vh;
@@ -629,10 +618,16 @@ img.card{
 }
 
 #project img{
-    border-radius: 50px;
+    border-radius: 30px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#project iframe{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
 }
   
 /* Next & previous buttons */
@@ -695,11 +690,34 @@ img.card{
 }
 
 #project .info-section{
-    margin-top: 5vh;
+    margin-top: 7vh;
+}
+
+#project .row h3{
+    font-weight: 700;
+}
+
+#project .project-date{
+    margin-top: 0vh;
+    margin-left: 2vh;
 }
 
 #project p{
     margin-top: 2vh;
+    line-height: 160%;
+    text-align: justify;
+}
+
+#project ul{
+    margin-top: 2vh;
+    list-style-position: inside;
+}
+
+#project li{
+    color: white;
+    font-size: 1.6em;
+    line-height: 160%;
+
 }
 
 #project .row{
@@ -707,25 +725,39 @@ img.card{
     flex-direction: row;
 }
 
+#project .pr2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 2vh;
+}
+
+#project .more-content-box{
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #details{
     margin-top: 5vh;
 }
 
 #details .c1{
-    flex: 8;
+    flex: 7;
 }
 
 #details .c2{
-    flex: .5;
+    flex: 1;
 }
 
 #details .c3{
-    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#details .c4{
-    flex: .5;
-}
 
 /* End Project Page Section */
 
@@ -953,6 +985,17 @@ img.card{
         flex-direction: column;
     }
 
+    #project .pr2{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5vh;
+    }
+
+    #project .project-date{
+        margin-left: 0vh;
+        margin-top: 2vh;
+    }
+
     /* Burger Menu */
     .nav-1, .nav-2-m, .nav-3{
         display: inline-block;
@@ -1082,7 +1125,7 @@ img.card{
     }
 
     #project img{
-        border-radius: 30px;
+        border-radius: 15px;
     }
 
     #aboutme .content h3{
@@ -1188,6 +1231,7 @@ img.card{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 0vh;
     }
 }
 
@@ -1279,6 +1323,13 @@ img.card{
 }
 
 /* End Media Query For Phone */
+
+/* Media Query for Big Screens */
+@media (min-width: 1921px) {
+    #project .container, .slideshow-container{
+        max-width: 1140px;
+    }
+}
 
 /* Keyframes */
 

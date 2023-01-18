@@ -16,15 +16,15 @@ var observer = new IntersectionObserver(function (entries) {
 
     if (entries[0].isIntersecting === true) {
         const stat1 = document.getElementById("stat-number-one");
-        animateValue(stat1, 0, 12, 600);
+        animateValue(stat1, 0, 14, 600);
 
         const stat2 = document.getElementById("stat-number-two");
-        animateValue(stat2, 0, 5, 600);
+        animateValue(stat2, 0, 8, 600);
 
         const stat3 = document.getElementById("stat-number-three");
-        animateValue(stat3, 0, 7, 600);
+        animateValue(stat3, 0, 9, 600);
     }
 }, { threshold: [1] });
 
-observer.observe(document.querySelector(".stat-number"));
+observer.observe(document.querySelector(".stats-container"));
   
