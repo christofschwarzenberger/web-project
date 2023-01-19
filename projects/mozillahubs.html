@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,100' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/51ff8636fd.js" crossorigin="anonymous"></script>
+    
+    <title>Christof Schwarzenberger</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section id="header" style="background-color: #303030dd;">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="../index.html#hero">
+                        <h6>Christof Schwarzenberger</h6>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar">
+
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="nav-1"><a href="../index.html#hero" data-after="Home"><h6>Home</h6></a></li>
+                        <li class="nav-2-d"><a href="../index.html#time-beam" data-after="Timeline"><h6>Timeline</h6></a></li>
+                        <li class="nav-2-m"><a href="../index.html#mobile-time-beam" data-after="Timeline"><h6>Timeline</h6></a></li>
+                        <li class="nav-3"><a href="../about.html" data-after="About"><h6>About</h6></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Header -->
+
+    <!-- Project Section -->
+
+    <section id="project">
+      <div class="project container">
+        <div class="headline-container">
+          <h1 class="project-header">Virtual 3D Collaborations</h1>
+          <h2 class="project-subheader">UX Design</h2>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="../img/mozillahubs.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="../img/mozillahubs-1.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="../img/mozillahubs-2.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="../img/mozillahubs-3.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="../img/mozillahubs-4.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="../img/mozillahubs-5.png">
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <br />
+        </div>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        
+        <div class="info-section">
+          <div class="row r1">
+            <div class="column c1">
+              <h3>Overview</h3>
+              <p id="description-text">
+                In the project Virtual 3D Collaborations a concept was investigated, with which companies should be able to <span>organize product reviews online</span>. The special feature of this concept is that meeting participants can participate the meeting with virtual avatars on <span>various devices</span>, no matter whether smartphone, laptop or vr glasses. Based on this idea, an exemplary prototype was created using <span>Mozilla Hubs and Blender</span> in the context of an automotive company. For this, different tires and car models were integrated into the meeting space.
+                <br><br>
+                In a <span>focus group</span>, employees of an automotive company were invited to participate in a simulated meeting using different end devices. The goal of the simulation was to make a <span>design decision</span> in which employees were asked to choose a tire model and decide on a car color. The employees then <span>evaluated the user experience</span> of the meeting and discussed whether virtual online collaboration could replace a physical meeting. If you are interested in the results of the focus group or the expert interviews about virtual 3D collaboration, you can read the paper linked below.
+              </p>
+            </div>
+          </div>
+          <div class="row r2" id="details">
+            <div class="column c1">
+              <h3>My Role</h3>
+              <p>
+                My task was to edit existing models of cars and tires in Blender and adapt them for the meeting space, as well as creating the <span>prototype</span> in Mozilla Hubs. I was also responsible for <span>planning, conducting and evaluating</span> the expert interviews and the focus group.
+              </p>
+            </div>
+            <div class="column c2"></div>
+            <div class="column c3">
+              <div class="partrow pr1">
+                <h3>Highlights</h3>
+                <ul>
+                  <li>5 <span>expert interviews</span></li>
+                  <li><span>focus group</span> with 4 subjects</li>
+                  <li>scientific <span>paper</span></li>
+                </ul>
+              </div>
+              <div class="partrow pr2">
+                <h3>Timeline</h3>
+                <p class="project-date">November 2021 - March 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="more-content-box">
+            <a class="cta" href="../documents/3dcollabs-paper.pdf">
+              <h3>Read Paper</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+      <div class="project-footer container">
+          <div class="footer-space">
+              <hr id="footer-line"></hr>
+          </div>
+          <div class="footer-icons">
+            <div class="control-box">
+              <div class="previous-button">
+                <div class="btn pre">
+                  <a href="../projects/escapers.html" class="btn pre">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <p>Previous</p>
+                  </a>
+                </div>
+              </div>
+              <div class="next-button">
+                <a href="../projects/transitioning.html" class="btn nxt">
+                  <p style="text-align: end;">Next</p>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- End Footer Section -->
+
+    <script src="../app.js"></script>
+    <script src="../countdown.js"></script>
+  </body>
+</html>
