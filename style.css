@@ -954,6 +954,44 @@ h0:nth-child(3) span{
 
 /* End Info Section */
 
+/* Impressum Section */
+
+#impressum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#impressum .impressum{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 8vh;
+}
+
+#impressum h1, h2{
+    margin-bottom: 2vh;
+}
+
+#impressum h2{
+    color: #00bfa6;
+}
+
+#impressum h3{
+    margin-bottom: 1vh;
+}
+
+#impressum p{
+    text-align: justify;
+    line-height: 150%;
+}
+
+#impressum .block{
+    margin-bottom: 4vh;
+}
+
+/* Impressum Section */
+
 /* Media Query For Tablet */
 
 @media (max-width: 800px) {
