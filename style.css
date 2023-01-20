@@ -124,7 +124,6 @@ span{
     display: inline-block;
     height: auto;
     width: fit-content;
-    background-color: transparent;
 }
 
 #header .nav-list ul a{
@@ -1115,7 +1114,6 @@ h0:nth-child(3) span{
         height: 2px;
         width: 25px;
         position: relative;
-        background-color: transparent;
         z-index: 1;
     }
     

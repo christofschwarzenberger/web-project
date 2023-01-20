@@ -58,7 +58,7 @@ function doSomething(scrollPos) {
 }
 
 document.addEventListener("scroll", (event) => {
-  lastKnownScrollPosition = window.scrollY;
+  lastKnownScrollPosition = window.pageYOffset;
 
   if (!ticking) {
     window.requestAnimationFrame(() => {
