@@ -1099,7 +1099,7 @@ h0:nth-child(3) span{
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 100;
+        z-index: 2000;
         cursor: pointer;
     }
     

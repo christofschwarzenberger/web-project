@@ -12,14 +12,11 @@ hamburger.addEventListener('click', () => {
     mobile_menu.classList.toggle('active');
 });
 
-hamburger.addEventListener('touchstart', () => {
-  hamburger.classList.toggle('active');
-  mobile_menu.classList.toggle('active');
-});
+document.addEventListener('scroll', () => {
+  if(!document.URL.includes("index")){
+      return;
+  }
 
-
-
-document.addEventListener('scroll', () =>{
   var scroll_position = window.scrollY;
   if(scroll_position > 250){
       header.style.backgroundColor = "#303030dd";
