@@ -13,9 +13,9 @@ hamburger.addEventListener('click', () => {
 });
 
 
-
+/*
 var onScroll = function () {
-  var scroll_position = window.pageYOffset;
+  var scroll_position = window.scrollY;
   if(!document.URL.includes("index")){
     return;
   }
@@ -29,7 +29,7 @@ var onScroll = function () {
 document.addEventListener("touchmove", onScroll);
 document.addEventListener('scroll', onScroll);
 
-/*
+
 document.addEventListener('touchmove', () =>{
   if(!document.URL.includes("index")){
       return;
@@ -40,19 +40,49 @@ document.addEventListener('touchmove', () =>{
   }else{
       header.style.backgroundColor = "transparent";
   }
+});*/
+
+let lastKnownScrollPosition = 0;
+let ticking = false;
+
+function doSomething(scrollPos) {
+  if(!document.URL.includes("index")){
+    return;
+  }
+
+  if(lastKnownScrollPosition > 250){
+    header.style.backgroundColor = "#303030";
+  }else{
+    header.style.backgroundColor = "transparent";
+  }
+}
+
+document.addEventListener("scroll", (event) => {
+  lastKnownScrollPosition = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      doSomething(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
 });
 
+/*
 document.addEventListener('scroll', () =>{
     if(!document.URL.includes("index")){
         return;
     }
-    var scroll_position = window.pageYOffset;
+    var scroll_position = window.scrollY;
     if(scroll_position > 250){
         header.style.backgroundColor = "#303030";
     }else{
         header.style.backgroundColor = "transparent";
     }
-});*/
+});
+*/
 
 menu_item.forEach((item) => {
     item.addEventListener('click', () => {
