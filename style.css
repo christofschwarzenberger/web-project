@@ -602,7 +602,7 @@ h0:nth-child(3) span{
     flex-direction: column;
     width: 100%;
     max-width: 800px;
-    height: 40vh;
+    height: 50vh;
     position: relative;
     margin: auto;
     margin-top: 5vh;
@@ -628,6 +628,7 @@ h0:nth-child(3) span{
     border-radius: 30px;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
   
 /* Next & previous buttons */
