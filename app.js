@@ -25,7 +25,8 @@ var onScroll = function () {
     header.style.backgroundColor = "transparent";
   }
 }
-onScroll();
+
+document.addEventListener("touchmove", onScroll);
 document.addEventListener('scroll', onScroll);
 
 /*
