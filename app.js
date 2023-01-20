@@ -12,6 +12,23 @@ hamburger.addEventListener('click', () => {
     mobile_menu.classList.toggle('active');
 });
 
+
+
+var onScroll = function () {
+  var scroll_position = window.pageYOffset;
+  if(!document.URL.includes("index")){
+    return;
+  }
+  if(scroll_position > 250){
+    header.style.backgroundColor = "#303030";
+  }else{
+    header.style.backgroundColor = "transparent";
+  }
+}
+onScroll();
+document.addEventListener('scroll', onScroll);
+
+/*
 document.addEventListener('touchmove', () =>{
   if(!document.URL.includes("index")){
       return;
@@ -34,7 +51,7 @@ document.addEventListener('scroll', () =>{
     }else{
         header.style.backgroundColor = "transparent";
     }
-});
+});*/
 
 menu_item.forEach((item) => {
     item.addEventListener('click', () => {
