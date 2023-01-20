@@ -558,13 +558,15 @@ h0:nth-child(3) span{
 
 .footer-text{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .footer-note{
-    margin-top: 30px;
+    margin-top: 40px;
     color: #787878;
+    text-align: center;
 }
 
 /* End Footer Section */
