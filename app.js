@@ -16,7 +16,7 @@ document.addEventListener('scroll', () =>{
     if(!document.URL.includes("index")){
         return;
     }
-    var scroll_position = window.scrollY;
+    var scroll_position = window.pageYOffset;
     if(scroll_position > 250){
         header.style.backgroundColor = "#303030";
     }else{
