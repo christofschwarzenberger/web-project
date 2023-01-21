@@ -7,7 +7,7 @@ if (screen.width < 800) {
   document.getElementById('timeline-link').href = "#mobile-time-beam";
 }
 
-hamburger.addEventListener('onclick', () => {
+hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     mobile_menu.classList.toggle('active');
 });
