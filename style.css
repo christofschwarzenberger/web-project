@@ -1072,24 +1072,7 @@ h0:nth-child(3) span{
         margin-left: 0;
         display: block;
     }
-    
-    #header .nav-list ul a::after{
-        content: attr(data-after);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        color: #ffffff1d;
-        font-size: 13rem;
-        letter-spacing: 50px;
-        z-index: -1;
-        transition: .3s ease letter-spacing;
-    }
-    
-    #header .nav-list ul li:hover a::after{
-        transform: translate(-50%, -50%) scale(1);
-        letter-spacing: initial;
-    }
+
 
     #header .hamburger{
         height: 40px;
@@ -1114,7 +1097,6 @@ h0:nth-child(3) span{
         height: 2px;
         width: 25px;
         position: relative;
-        z-index: 19;
     }
     
     #header .hamburger .bar::after,
