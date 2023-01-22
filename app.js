@@ -13,12 +13,16 @@ function showMenu() {
 }
 
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++){
+    if (slides[i].style.display != "none") {
+      showSlides(i + n + 1);
+      return;
+    }
+  }
+  showSlides(0);
 }
 
 // Thumbnail image controls
@@ -27,19 +31,29 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  var newIndex = n;
+  if (n > slides.length) {
+    newIndex = 1 
+  }
+  
+  if (n < 1) {
+    newIndex = slides.length;
+  }
+  
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none"; 
   }
+  
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", ""); 
   }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
+  
+  slides[newIndex - 1].style.display = "flex";
+  
+  dots[newIndex - 1].className += " active";
 }
 
 
