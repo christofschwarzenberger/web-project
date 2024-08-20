@@ -803,11 +803,11 @@ h0:nth-child(3) span{
 }
 
 .circled-minime{
-    width: 250px;
-    height: 250px;
-    background-image: url("./img/minime.jpeg");
-    background-position: center;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
     border-radius: 50%;
+    margin-top: 5vh;
     margin-bottom: 7vh;
 }
 
@@ -1311,8 +1311,8 @@ h0:nth-child(3) span{
     }
 
     .circled-minime{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         background-size: 120%;
     }
 
